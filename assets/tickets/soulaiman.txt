@@ -1,0 +1,4 @@
+TICKETS - PROJET SITE VITRINE SYMFONY
+
+3. Soulaiman
+- Développer la page : about.html.twig (contenu + structure + se basé sur base.html.twig)
