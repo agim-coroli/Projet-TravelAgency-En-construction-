@@ -1,0 +1,92 @@
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-bg);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+.form-group {
+    margin-bottom: 1.5rem;
+}
+ 
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+ 
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid var(--color-light-gray);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+ 
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-secondary);
+}
+ 
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+ 
+/* Cards Grid - Contact page */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+ 
+.card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+ 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+ 
+.card-content {
+    padding: 1.5rem;
+}
+ 
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+ 
+.card-text {
+    color: #6c757d;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+ 
+/* Responsive Design for Contact Form */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+ 
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+ 
