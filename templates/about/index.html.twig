@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+ 
+{% block title %}À propos - TravelAgency{% endblock %}
+ 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="/css/about.css">
+{% endblock %}
+ 
+{% block content %}
+    <div class="container">
+        <section class="section">
+            <h1 class="section-title">À propos de TravelAgency</h1>
+           
+            <div class="about-content">
+                <p>
+                    Fondée en 2003, TravelAgency est une agence de voyage spécialisée dans l'organisation de séjours sur mesure et de voyages d'exception.
+                    Notre mission est de transformer vos rêves de voyage en réalité, en vous offrant des expériences authentiques et mémorables.
+                </p>
+               
+                <p>
+                    Avec plus de 20 ans d'expérience dans le secteur du tourisme, nous avons développé un réseau de partenaires de confiance à travers le monde.
+                    Notre équipe de conseillers voyage passionnés vous accompagne de A à Z dans l'organisation de votre séjour, en tenant compte de vos envies,
+                    de votre budget et de vos contraintes.
+                </p>
+               
+                <p>
+                    Que vous recherchiez un séjour romantique, une aventure en famille, un voyage d'affaires ou une escapade entre amis,
+                    nous mettons notre expertise à votre service pour créer un voyage sur mesure qui vous ressemble.
+                </p>
+            </div>
+ 
+            <div class="cards-grid" style="margin-top: 3rem;">
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">Notre Vision</h3>
+                        <p class="card-text">
+                            Rendre le voyage accessible à tous tout en garantissant des expériences de qualité supérieure.
+                            Nous croyons que chaque voyage est une opportunité de découvrir, d'apprendre et de créer des souvenirs inoubliables.
+                        </p>
+                    </div>
+                </div>
+ 
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">Nos Valeurs</h3>
+                        <p class="card-text">
+                            <strong>Fiabilité :</strong> Nous tenons nos engagements et garantissons la qualité de nos services.<br>
+                            <strong>Personnalisation :</strong> Chaque voyage est unique et adapté à vos besoins.<br>
+                            <strong>Passion :</strong> Notre amour du voyage se reflète dans chaque détail de votre séjour.
+                        </p>
+                    </div>
+                </div>
+ 
+                <div class="card">
+                    <div class="card-content">
+                        <h3 class="card-title">Notre Engagement</h3>
+                        <p class="card-text">
+                            Nous nous engageons à vous offrir un service client d'excellence, disponible avant, pendant et après votre voyage.
+                            Votre satisfaction est notre priorité absolue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+ 
+            <div style="text-align: center; margin-top: 3rem;">
+                <h2 class="section-title" style="font-size: 2rem; margin-bottom: 1rem;">Prêt à partir ?</h2>
+                <p class="section-subtitle" style="margin-bottom: 2rem;">Contactez-nous dès aujourd'hui pour commencer à planifier votre prochain voyage.</p>
+                <a href="{{ path('contact') }}" class="btn">Nous contacter</a>
+            </div>
+        </section>
+    </div>
+{% endblock %}
